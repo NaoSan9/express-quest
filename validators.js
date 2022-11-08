@@ -4,7 +4,7 @@ const movieSchema = Joi.object({
     title: Joi.string().max(255).required(),
     director: Joi.string().max(255).required(),
     year: Joi.number().integer(),
-    color: Joi.string().max(255).required(),
+    color: Joi.boolean().required(),
     duration: Joi.number().integer()
 });
 
